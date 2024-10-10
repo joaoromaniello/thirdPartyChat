@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="https://b2list.com.br/wp-content/uploads/2023/08/Logo-Cores-768x203.png" alt="Logo">
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>Usuários</h2>
+            <ul id="user-list">
+            </ul>
+        </div>
+
+        <div class="chat-area">
+            <div class="chat-header">
+                <h2 id="chat-username">Selecione um usuário</h2>
+            </div>
+            <div id="message-list" class="message-list">
+            </div>
+            <div class="message-input">
+                <input type="text" id="message" placeholder="Escreva sua mensagem" />
+                <button onclick="sendMessage()">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
